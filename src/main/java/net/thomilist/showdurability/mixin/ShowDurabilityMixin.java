@@ -28,7 +28,7 @@ public abstract class ShowDurabilityMixin
             MatrixStack matrices = getMatrices();
             matrices.push();
 
-            if (stack.getCount() == 1 && stack.isDamageable())
+            if (stack.getCount() == 1 && stack.isDamageable() && stack.isDamaged())
             {
                 // The factor used to scale the text size and move it accordingly.
                 // A factor of 2.0f means the text will be half the original size.
